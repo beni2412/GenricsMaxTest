@@ -42,4 +42,35 @@ public class TestMaximumTestCase {
 		} 
 		Assert.assertEquals(true, finalResult);;
 	}
+	
+	@Test
+	public void givenFirst_Greater_ShouldReturnFirstFloat() {
+		TestMaximum test = new TestMaximum();
+		Float result = test.maxOfThree(100f, 90f, 80f);
+		boolean finalResult=false; 
+		if(result == 100f) {
+		finalResult = true;
+		} 
+		Assert.assertEquals(true, finalResult);;
+	}
+	@Test
+	public void givenSecond_Greater_ShouldReturnSecondFloat() {
+		TestMaximum test = new TestMaximum();
+		Float result = test.maxOfThree(90f, 100f, 80f);
+		boolean finalResult=false; 
+		if(result == 100f) {
+		finalResult = true;
+		} 
+		Assert.assertEquals(true, finalResult);;
+	}
+	@Test
+	public void givenThird_Greater_ShouldReturnThirdFloat() {
+		TestMaximum test = new TestMaximum();
+		Float result = test.maxOfThree(90f, 80f, 100f);
+		boolean finalResult=false; 
+		if(result == 100f) {
+		finalResult = true;
+		} 
+		Assert.assertEquals(true, finalResult);;
+	}
 }
