@@ -73,4 +73,34 @@ public class TestMaximumTestCase {
 		} 
 		Assert.assertEquals(true, finalResult);;
 	}
+	@Test
+	public void givenFirst_Greater_ShouldReturnFirstString() {
+		TestMaximum test = new TestMaximum();
+		String result = test.maxOfThree("peach", "banana", "apple");
+		boolean finalResult=false; 
+		if(result.equalsIgnoreCase("peach")) {
+		finalResult = true;
+		} 
+		Assert.assertEquals(true, finalResult);;
+	}
+	@Test
+	public void givenSecond_Greater_ShouldReturnSecondString() {
+		TestMaximum test = new TestMaximum();
+		String result = test.maxOfThree("banana", "peach", "apple");
+		boolean finalResult=false; 
+		if(result.equalsIgnoreCase("peach")) {
+		finalResult = true;
+		} 
+		Assert.assertEquals(true, finalResult);;
+	}
+	@Test
+	public void givenThird_Greater_ShouldReturnThirdString() {
+		TestMaximum test = new TestMaximum();
+		String result = test.maxOfThree("banana", "apple", "peach");
+		boolean finalResult=false; 
+		if(result.equalsIgnoreCase("peach")) {
+		finalResult = true;
+		} 
+		Assert.assertEquals(true, finalResult);;
+	}
 }
